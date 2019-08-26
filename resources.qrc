@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/new/images">
+        <file>Abstract_Factory-2x.png</file>
+    </qresource>
+</RCC>

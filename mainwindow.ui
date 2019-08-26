@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1050</width>
+    <height>921</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>1031</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Abstract Factory</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>34</y>
+        <width>171</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Client Class Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="ClientClasslineEdit">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>25</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>94</y>
+        <width>201</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Platform (Base class)</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="PlatformBaseClasslineEdit">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>84</y>
+        <width>241</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>159</y>
+        <width>201</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Product (Base class)</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>0</y>
+        <width>481</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Platform Information</string>
+      </property>
+      <widget class="QListView" name="PlatformClasseslistView">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>71</y>
+         <width>281</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Add All platform classes</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="AddPlatformClasspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>71</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Add Class</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="DeletePlatformClasspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>118</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Delete Class</string>
+       </property>
+      </widget>
+      <widget class="QListView" name="PlatformMethodslistView">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>227</y>
+         <width>281</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Add All patform functions</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="DeletePlatformMethodspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>274</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Delete Method</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="AddPlatformMethodspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>227</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Add  Method</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>197</y>
+         <width>301</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Platform Methods in below list </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>19</x>
+         <y>46</y>
+         <width>301</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Platform classes in below list </string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>340</y>
+        <width>481</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Product Information</string>
+      </property>
+      <widget class="QListView" name="ProductClasseslistView">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>121</y>
+         <width>281</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Add All Product classes</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="DeleteProductClasspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>148</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Delete</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="AddProductClasspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>100</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Add</string>
+       </property>
+      </widget>
+      <widget class="QListView" name="ProductMethodslistView">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>249</y>
+         <width>281</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="toolTip">
+        <string>Add All product functions</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="DeleteProductMethodspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>296</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Delete Method</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="AddProductMethodspushButton">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>249</y>
+         <width>151</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>&amp;Add  Method</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>219</y>
+         <width>301</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Product Methods in below list </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>50</y>
+         <width>301</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Add Product classes in below list </string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="ProductClasseslistWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>80</y>
+         <width>281</width>
+         <height>41</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGraphicsView" name="graphicsView">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>260</y>
+        <width>481</width>
+        <height>441</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="AddProducClasseslistWidget">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>140</y>
+        <width>241</width>
+        <height>51</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="AddProductListpushButton">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>200</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Add</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ClearProductListpushButton">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>200</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Design Pattern</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="DesignPatternscomboBox">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>341</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>AbstractFactory</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>0</y>
+      <width>491</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <widget class="QPushButton" name="GeneratepushButton">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&amp;Generate</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>30</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>15</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>O/p Directory</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="SrcDirectorylineEdit">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>30</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BrowsepushButton">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>70</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>&amp;Browse</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1050</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
