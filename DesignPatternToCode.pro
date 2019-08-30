@@ -35,3 +35,8 @@ FORMS += \
 
 RESOURCES += \
     resources.qrc
+
+unix:!macx: LIBS += -L$$PWD/build-CodeGenerator-Desktop_Qt_5_11_0_GCC_64bit-Debug/ -lCodeGenerator
+
+INCLUDEPATH += $$PWD/CodeGenerator
+DEPENDPATH += $$PWD/CodeGenerator
